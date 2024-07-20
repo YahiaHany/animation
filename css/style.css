@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    position: relative;
+    background-color: rgba(1, 1, 71, 0.824);
+}
+
+header ul {
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header li {
+    display: inline-block;
+    margin: 6% 30px;
+    font-size: 21px;
+}
+
+header a {
+    text-decoration: none;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: rgb(146, 146, 255);
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: rgb(206, 18, 18);
+    color: white;
+}
+
+.road {
+    background-image: url(../images/road.jpg);
+    height: 90vh;
+    position: relative;
+}
+
+.rr {
+    position: absolute;
+    right: 0;
+    top: 11.5%;
+}
+
+.ll {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.ltr1 {
+    animation: mario 3s linear 0s forwards;
+}
+
+.ltr2 {
+    top: 27%;
+    animation: mario 3s linear 6s forwards;
+}
+
+.ltr3 {
+    top: 51%;
+    animation: mario 3s linear 12s forwards;
+}
+
+.ltr4 {
+    top: 77%;
+    animation: mario 3s linear 18s forwards;
+}
+
+.rtl1 {
+    animation: luigi 3s linear 3s forwards;
+}
+
+.rtl2 {
+    top: 37.5%;
+    animation: luigi 3s linear 9s forwards;
+}
+
+.rtl3 {
+    top: 62.5%;
+    animation: luigi 3s linear 15s forwards;
+}
+
+.rtl4 {
+    top: 88.5%;
+    animation: luigi 3s linear 21s forwards;
+}
+
+@keyframes mario {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(93vw) rotateY(180deg);
+        ;
+    }
+
+}
+
+@keyframes luigi {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-93vw) rotateY(180deg);
+        ;
+
+    }
+}
