@@ -97,25 +97,35 @@ a:hover {
 }
 
 @keyframes mario {
-    from {
-        transform: translateX(0px);
+    0% {
+        transform: translateX(0px) rotateY(0deg);
     }
 
-    to {
+    95% {
+        transform: translateX(93vw) rotateY(0deg);
+
+    }
+
+    100% {
         transform: translateX(93vw) rotateY(180deg);
         ;
     }
 
+
 }
 
 @keyframes luigi {
-    from {
-        transform: translateX(0px);
+    0% {
+        transform: translateX(0px) rotateY(0deg);
     }
 
-    to {
+    95% {
+        transform: translateX(-93vw) rotateY(0deg);
+
+    }
+
+    100% {
         transform: translateX(-93vw) rotateY(180deg);
         ;
-
     }
 }
